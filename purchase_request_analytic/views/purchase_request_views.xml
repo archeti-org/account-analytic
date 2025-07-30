@@ -44,25 +44,25 @@
             </data>
         </field>
     </record>
-    <record id="view_purchase_request_search" model="ir.ui.view">
-        <field name="name">purchase.request.search</field>
-        <field name="model">purchase.request</field>
-        <field name="inherit_id" ref="purchase_request.view_purchase_request_search" />
-        <field name="arch" type="xml">
-            <group position="before">
-                <field
-                    name="analytic_distribution_search"
-                    string="Analytic Distribution"
-                />
-            </group>
-            <xpath expr="//group" position="inside">
-                <filter
-                    name="analytic_distribution"
-                    string="Analytic Distribution"
-                    domain="[]"
-                    context="{'group_by':'analytic_distribution'}"
-                />
-            </xpath>
-        </field>
-    </record>
+<!--    <record id="view_purchase_request_search" model="ir.ui.view">-->
+<!--        <field name="name">purchase.request.search</field>-->
+<!--        <field name="model">purchase.request</field>-->
+<!--        <field name="inherit_id" ref="purchase_request.view_purchase_request_search" />-->
+<!--        <field name="arch" type="xml">-->
+<!--            <group position="before">-->
+<!--                <field-->
+<!--                    name="analytic_distribution_search"-->
+<!--                    string="Analytic Distribution"-->
+<!--                />-->
+<!--            </group>-->
+<!--            <xpath expr="//group" position="inside">-->
+<!--                <filter-->
+<!--                    name="analytic_distribution"-->
+<!--                    string="Analytic Distribution"-->
+<!--                    domain="[]"-->
+<!--                    context="{'group_by':'analytic_distribution'}"-->
+<!--                />-->
+<!--            </xpath>-->
+<!--        </field>-->
+<!--    </record>-->
 </odoo>
